@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: flask-student-app
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn WebApp:app
+    plan: free
